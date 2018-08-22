@@ -6,6 +6,13 @@
   <meta id="vp" name="viewport" content="width=630">
   <link id="favicon" rel="shortcut icon" href="" type="image/png">
   <title><?php bloginfo('name'); ?> <?php wp_title("", true); ?></title>
+  <?php 
+    wp_nav_menu( array(
+      'menu_class'=>'menu',
+      'theme_location'=>'primary',
+      'after'=>' /'
+    ) );
+  ?>
   <?php wp_head(); ?>
   <script>
   if (screen.width > 736) {

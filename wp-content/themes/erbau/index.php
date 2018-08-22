@@ -136,7 +136,7 @@
     </ul>
   </div>
 </section>
-<section class="services">
+<section id="servises" class="services">
   <div class="wrapper">
     <div class="title">
       <h1>
@@ -180,64 +180,64 @@
               ?>
             </div>
             <div class="services-info">
-<!--              <div class="services-info-title">-->
-<!--                --><?php //the_title(); ?>
-<!--              </div>-->
-              <div class="services-info-param">
-                <?php if (get_field('type')): ?>
-                  <p>
-                    Тип: <span><?php the_field('type'); ?></span>
-                  </p>
-                <?php endif; ?>
-                <?php if (get_field('use')): ?>
-                  <p>
-                    Помещение: <span><?php the_field('use'); ?></span>
-                  </p>
-                <?php endif; ?>
-                <?php if (get_field('color')): ?>
-                  <p>
-                    Цвет: <span><?php the_field('color'); ?></span>
-                  </p>
-                <?php endif; ?>
-                <?php if (get_field('area')): ?>
-                  <p>
-                    Площадь: <span><?php the_field('area'); ?> м²</span>
-                  </p>
-                <?php endif; ?>
-                <?php if (get_field('installation')): ?>
-                  <p>
-                    Монтаж: <span><?php the_field('installation'); ?></span>
-                  </p>
-                <?php endif; ?>
-                <?php if (get_field('include')): ?>
-                  <p>
-                    Включено: <span><?php the_field('include'); ?></span>
-                  </p>
-                <?php endif; ?>
-              </div>
-              <?php if (get_field('price')): ?>
-                <div class="services-info-price">
-                  Стоимость: <span><?php the_field('price'); ?> ₽</span>
+  <!--              <div class="services-info-title">-->
+  <!--                --><?php //the_title(); ?>
+  <!--              </div>-->
+                <div class="services-info-param">
+                  <?php if (get_field('type')): ?>
+                    <p>
+                      Тип: <span><?php the_field('type'); ?></span>
+                    </p>
+                  <?php endif; ?>
+                  <?php if (get_field('use')): ?>
+                    <p>
+                      Помещение: <span><?php the_field('use'); ?></span>
+                    </p>
+                  <?php endif; ?>
+                  <?php if (get_field('color')): ?>
+                    <p>
+                      Цвет: <span><?php the_field('color'); ?></span>
+                    </p>
+                  <?php endif; ?>
+                  <?php if (get_field('area')): ?>
+                    <p>
+                      Площадь: <span><?php the_field('area'); ?> м²</span>
+                    </p>
+                  <?php endif; ?>
+                  <?php if (get_field('installation')): ?>
+                    <p>
+                      Монтаж: <span><?php the_field('installation'); ?></span>
+                    </p>
+                  <?php endif; ?>
+                  <?php if (get_field('include')): ?>
+                    <p>
+                      Включено: <span><?php the_field('include'); ?></span>
+                    </p>
+                  <?php endif; ?>
                 </div>
-              <?php endif; ?>
-              <div class="services-info-button">
-                <a class="m-button to-popup" href="#zamer">ВЫЗВАТЬ ЗАМЕРЩИКА
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-b.svg" alt="">
-                </a>
+                <?php if (get_field('price')): ?>
+                  <div class="services-info-price">
+                    Стоимость: <span><?php the_field('price'); ?> ₽</span>
+                  </div>
+                <?php endif; ?>
+                <div class="services-info-button">
+                  <a class="m-button to-popup" href="#zamer">ВЫЗВАТЬ ЗАМЕРЩИКА
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-b.svg" alt="">
+                  </a>
+                </div>
               </div>
+              <div class="i-clear"></div>
             </div>
-            <div class="i-clear"></div>
-          </div>
-        <?php
-        endforeach;
-        ?>
+          <?php
+          endforeach;
+          ?>
+        </div>
+        <a href="" class="prev"></a>
+        <a href="" class="next"></a>
       </div>
-      <a href="" class="prev"></a>
-      <a href="" class="next"></a>
     </div>
-  </div>
 </section>
-<section class="safe">
+<section id="safe" class="safe">
   <div class="wrapper">
     <div class="title">
       <h1>
@@ -343,7 +343,7 @@
     </div>
   </div>
 </section>
-<section class="more">
+<section id="more" class="more">
   <div class="wrapper">
     <div class="more-text">
       <a href="#tab" class="to-modal">
@@ -353,7 +353,7 @@
     </div>
   </div>
 </section>
-<section class="work">
+<section id="more" class="work">
   <div class="wrapper">
     <div class="title">
       <h1>
@@ -392,7 +392,7 @@
     </div>
   </div>
 </section>
-<section class="price">
+<section id="price" class="price">
   <div class="wrapper">
     <div class="title">
       <h1>
@@ -430,7 +430,7 @@
     </div>
   </div>
 </section>
-<section class="calc">
+<section id="calc" class="calc">
   <div class="wrapper">
     <div class="left">
       <div class="title">
@@ -474,7 +474,7 @@
     </div>
   </div>
 </section>
-<section class="factory">
+<section id="factory" class="factory">
   <div class="title">
     <h1>
       Все полотна производятся на<Br class="mobile-hide"/>
@@ -506,7 +506,7 @@
     </a>
   </div>
 </section>
-<section class="prof">
+<section id="prof" class="prof">
   <div class="wrapper">
     <div class="title">
       <h1>
@@ -606,7 +606,7 @@
     </div>
   </div>
 </section>
-<section class="light">
+<section id="light" class="light">
   <div class="wrapper">
     <div class="title">
       <h1>
@@ -628,7 +628,7 @@
     </div>
   </div>
 </section>
-<section class="gift">
+<section id="gift" class="gift">
   <div class="wrapper">
     <div class="title">
       <h1>
@@ -811,7 +811,7 @@
     </div>
   </div>
 </section>
-<section class="guarantee">
+<section id="guarantee" class="guarantee">
   <div class="wrapper">
     <div class="title">
       <h1>
@@ -857,7 +857,7 @@
     </div>
   </div>
 </section>
-<section class="map">
+<section id="map" class="map">
   <div class="title">
     <h1>
       Работаем по всему<br/>
@@ -867,26 +867,27 @@
   <div class="map-inner">
     <div id="map"></div>
     <div class="wrapper">
-<!--      <div class="map-info">-->
-<!--        <div class="img">-->
-<!--          <img src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/office.jpg" alt="">-->
-<!--        </div>-->
-<!--        <div class="office">-->
-<!--          <div class="name">-->
-<!--            Офис, склад:-->
-<!--          </div>-->
-<!--          <div class="address">-->
-<!--            Санкт-Петербург,<br/>-->
-<!--            ул. Моисеенко 22б-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="phone">-->
-<!--          <a href="tel:--><?php //echo get_theme_mod('landing-setting-phone'); ?><!--">--><?php //echo get_theme_mod('landing-setting-phone'); ?><!--</a>-->
-<!--        </div>-->
-<!--      </div>-->
+  <!--      <div class="map-info">-->
+  <!--        <div class="img">-->
+  <!--          <img src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/office.jpg" alt="">-->
+  <!--        </div>-->
+  <!--        <div class="office">-->
+  <!--          <div class="name">-->
+  <!--            Офис, склад:-->
+  <!--          </div>-->
+  <!--          <div class="address">-->
+  <!--            Санкт-Петербург,<br/>-->
+  <!--            ул. Моисеенко 22б-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--        <div class="phone">-->
+  <!--          <a href="tel:--><?php //echo get_theme_mod('landing-setting-phone'); ?><!--">--><?php //echo get_theme_mod('landing-setting-phone'); ?><!--</a>-->
+  <!--        </div>-->
+  <!--      </div>-->
     </div>
   </div>
 </section>
+
 <div class="fade"></div>
   <div class="popup-form" id="zamer">
     <div class="popup-close"></div>
