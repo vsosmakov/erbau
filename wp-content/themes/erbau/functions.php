@@ -22,7 +22,10 @@ add_action('wp_enqueue_scripts', 'lp_styles');
 /**
  * Добавляет секции, параметры и элементы управления (контролы) на страницу настройки темы
  */
-
+add_action( 'after_setup_theme', 'theme_register_nav_menu' );
+function theme_register_nav_menu() {
+  register_nav_menu( 'primary', 'Primary Menu' );
+}
 
 function lading_customize_register($customize)
 {
