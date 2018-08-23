@@ -226,6 +226,8 @@ a {
       padding-left: 5px;
   }
 
+  
+
   .top-nav {
      /*fixed float menu*/
      // top: 145px; /*height of main menu in px*/
@@ -241,11 +243,13 @@ a {
         display: inline-block;
         text-transform: uppercase;
         padding: 20px 5px;
-        @include smooth_tr(0.4s);
+        margin: 5px;
+        @include smooth_tr(0.3s);
         &:hover {
           text-decoration: none;
           background-color: #FCDD37;
           color: #000000;
+          border-radius: 10px;
         }
       }
       ul.list-inline {
@@ -255,6 +259,16 @@ a {
   // li.current-menu-item a {
   //   background-color: #FCDD37
   // }
+
+  .calc_menu a {
+      background-color: #82b941;
+      color: #ffffff;
+      border-radius: 10px;
+      &:hover {
+        color: #000000;
+      }
+    }
+
 // ---------------- END NAV MENU --------------- //
 
 .wrapper {

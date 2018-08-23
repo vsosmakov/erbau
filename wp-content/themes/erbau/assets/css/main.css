@@ -92,17 +92,26 @@ ul.list-inline a {
   display: inline-block;
   text-transform: uppercase;
   padding: 20px 5px;
-  -moz-transition: all 0.4s 0.02s ease;
-  -o-transition: all 0.4s 0.02s ease;
-  -webkit-transition: all 0.4s 0.02s ease; }
+  margin: 5px;
+  -moz-transition: all 0.3s 0.02s ease;
+  -o-transition: all 0.3s 0.02s ease;
+  -webkit-transition: all 0.3s 0.02s ease; }
   ul.list-inline a:hover {
     text-decoration: none;
     background-color: #FCDD37;
-    color: #000000; }
+    color: #000000;
+    border-radius: 10px; }
 
 ul.list-inline {
   margin: 0 auto;
   text-align: center; }
+
+.calc_menu a {
+  background-color: #82b941;
+  color: #ffffff;
+  border-radius: 10px; }
+  .calc_menu a:hover {
+    color: #000000; }
 
 .wrapper {
   width: 970px;

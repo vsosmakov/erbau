@@ -28,6 +28,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-P23G9N', '73670');</script>
 
+  <script>
+    $(document).ready(function(){
+      $("#top_nav").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+        top = $(id).offset().top;
+        //анимируем переход на расстояние - top за 500 мс
+        $('body,html').animate({scrollTop: top}, 500);
+      });
+    });
+  </script>
   <!-- <script>
       var h_hght = 145; // высота шапки
       var h_mrg = 0;    // отступ когда шапка уже не видна
