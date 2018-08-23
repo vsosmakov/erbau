@@ -211,33 +211,51 @@ a {
   }
 }
 
-@mixin smooth_tr ($duration : 0.1s) {
-      -moz-transition: all $duration 0.02s ease;
-      -o-transition: all $duration 0.02s ease;
-      -webkit-transition: all $duration 0.02s ease;
-    }
-
-.list-inline>li {
-    display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
-}
-
-ul.list-inline a {
-      color: #000000;
-      display: inline-block;
-      text-transform: uppercase;
-      padding: 20px 10px;
-      @include smooth_tr(0.4s);
-      &:hover {
-        text-decoration: none;
-        background-color: #FCDD37;
-        color: #000000;
+// ---------------- START SMOOTH ACTIONS --------------- //
+  @mixin smooth_tr ($duration : 0.1s) {
+        -moz-transition: all $duration 0.02s ease;
+        -o-transition: all $duration 0.02s ease;
+        -webkit-transition: all $duration 0.02s ease;
       }
-    }
-    ul.list-inline {
-      margin-bottom: 0;
-    }
+// ---------------- END SMOOTH ACTIONS --------------- //
+
+// ---------------- START NAV MENU --------------- //
+  .list-inline>li {
+      display: inline;
+      padding-right: 5px;
+      padding-left: 5px;
+  }
+
+  .top-nav {
+     /*fixed float menu*/
+     // top: 145px; /*height of main menu in px*/
+     position: fixed;
+     z-index: 100;
+     width: 100%;
+     background-color: #FBF2BD; 
+  }
+
+  ul.list-inline a {
+        font-family: FuturaPT;
+        color: #000000;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 20px 5px;
+        @include smooth_tr(0.4s);
+        &:hover {
+          text-decoration: none;
+          background-color: #FCDD37;
+          color: #000000;
+        }
+      }
+      ul.list-inline {
+        margin: 0 auto;
+        text-align: center;
+      }
+  // li.current-menu-item a {
+  //   background-color: #FCDD37
+  // }
+// ---------------- END NAV MENU --------------- //
 
 .wrapper {
   width: 970px;
@@ -390,7 +408,7 @@ header{
   }
   .header-top{
     overflow: hidden;
-    padding-top: 38px;
+    padding-top: 60px;
     .logo{
       background: url(../images/logo.svg) no-repeat center;
       width: 162px;

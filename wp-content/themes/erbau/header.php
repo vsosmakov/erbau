@@ -10,7 +10,10 @@
     wp_nav_menu( array(
       'menu_class'=>'list-inline',
       'theme_location'=>'primary',
-      'after'=>' /'
+      'container_id'=>'top-nav',
+      'container_class'=>'top-nav',
+      'after'=>'',
+      'depth'=>1,
     ) );
   ?>
   <?php wp_head(); ?>
@@ -23,5 +26,32 @@
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-P23G9N', '73670');</script>	
+})(window,document,'script','dataLayer','GTM-P23G9N', '73670');</script>
+
+  <!-- <script>
+      var h_hght = 145; // высота шапки
+      var h_mrg = 0;    // отступ когда шапка уже не видна
+                       
+      $(function(){
+       
+          var elem = $('#top_nav');
+          var top = $(this).scrollTop();
+           
+          if(top > h_hght){
+              elem.css('top', h_mrg);
+          }           
+           
+          $(window).scroll(function(){
+              top = $(this).scrollTop();
+               
+              if (top+h_mrg < h_hght) {
+                  elem.css('top', (h_hght-top));
+              } else {
+                  elem.css('top', h_mrg);
+              }
+          });
+       
+      });
+  </script> -->
+
 </head>

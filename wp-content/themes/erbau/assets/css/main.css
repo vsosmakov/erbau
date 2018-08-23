@@ -75,15 +75,23 @@ a {
     color: #ccc; }
 
 .list-inline > li {
-  display: inline-block;
+  display: inline;
   padding-right: 5px;
   padding-left: 5px; }
 
+.top-nav {
+  /*fixed float menu*/
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: #FBF2BD; }
+
 ul.list-inline a {
+  font-family: FuturaPT;
   color: #000000;
   display: inline-block;
   text-transform: uppercase;
-  padding: 20px 10px;
+  padding: 20px 5px;
   -moz-transition: all 0.4s 0.02s ease;
   -o-transition: all 0.4s 0.02s ease;
   -webkit-transition: all 0.4s 0.02s ease; }
@@ -93,7 +101,8 @@ ul.list-inline a {
     color: #000000; }
 
 ul.list-inline {
-  margin-bottom: 0; }
+  margin: 0 auto;
+  text-align: center; }
 
 .wrapper {
   width: 970px;
@@ -274,7 +283,7 @@ header {
     padding-top: 125px; }
   header .header-top {
     overflow: hidden;
-    padding-top: 38px; }
+    padding-top: 60px; }
     header .header-top .logo {
       background: url(../images/logo.svg) no-repeat center;
       width: 162px;
