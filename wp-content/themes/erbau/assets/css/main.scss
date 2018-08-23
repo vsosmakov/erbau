@@ -211,6 +211,34 @@ a {
   }
 }
 
+@mixin smooth_tr ($duration : 0.1s) {
+      -moz-transition: all $duration 0.02s ease;
+      -o-transition: all $duration 0.02s ease;
+      -webkit-transition: all $duration 0.02s ease;
+    }
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+ul.list-inline a {
+      color: #000000;
+      display: inline-block;
+      text-transform: uppercase;
+      padding: 20px 10px;
+      @include smooth_tr(0.4s);
+      &:hover {
+        text-decoration: none;
+        background-color: #FCDD37;
+        color: #000000;
+      }
+    }
+    ul.list-inline {
+      margin-bottom: 0;
+    }
+
 .wrapper {
   width: 970px;
   margin: 0 auto;

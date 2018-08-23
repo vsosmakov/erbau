@@ -71,6 +71,7 @@
     </div>
   </div>
 </header>
+
 <section id="bonus" class="bonus">
   <div class="wrapper">
     <div class="title">
@@ -136,6 +137,7 @@
     </ul>
   </div>
 </section>
+
 <section id="servises" class="services">
   <div class="wrapper">
     <div class="title">
@@ -237,6 +239,7 @@
       </div>
     </div>
 </section>
+
 <section id="safe" class="safe">
   <div class="wrapper">
     <div class="title">
@@ -343,6 +346,7 @@
     </div>
   </div>
 </section>
+
 <section id="more" class="more">
   <div class="wrapper">
     <div class="more-text">
@@ -353,7 +357,8 @@
     </div>
   </div>
 </section>
-<section id="more" class="work">
+
+<section id="work" class="work">
   <div class="wrapper">
     <div class="title">
       <h1>
@@ -392,6 +397,7 @@
     </div>
   </div>
 </section>
+
 <section id="price" class="price">
   <div class="wrapper">
     <div class="title">
@@ -430,6 +436,7 @@
     </div>
   </div>
 </section>
+
 <section id="calc" class="calc">
   <div class="wrapper">
     <div class="left">
@@ -474,6 +481,7 @@
     </div>
   </div>
 </section>
+
 <section id="factory" class="factory">
   <div class="title">
     <h1>
@@ -506,6 +514,7 @@
     </a>
   </div>
 </section>
+
 <section id="prof" class="prof">
   <div class="wrapper">
     <div class="title">
@@ -606,6 +615,7 @@
     </div>
   </div>
 </section>
+
 <section id="light" class="light">
   <div class="wrapper">
     <div class="title">
@@ -628,6 +638,7 @@
     </div>
   </div>
 </section>
+
 <section id="gift" class="gift">
   <div class="wrapper">
     <div class="title">
@@ -811,6 +822,7 @@
     </div>
   </div>
 </section>
+
 <section id="guarantee" class="guarantee">
   <div class="wrapper">
     <div class="title">
@@ -857,7 +869,8 @@
     </div>
   </div>
 </section>
-<section id="map" class="map">
+
+<section id="map_menu" class="map">
   <div class="title">
     <h1>
       Работаем по всему<br/>

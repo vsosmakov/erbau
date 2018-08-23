@@ -8,7 +8,7 @@
   <title><?php bloginfo('name'); ?> <?php wp_title("", true); ?></title>
   <?php 
     wp_nav_menu( array(
-      'menu_class'=>'menu',
+      'menu_class'=>'list-inline',
       'theme_location'=>'primary',
       'after'=>' /'
     ) );
