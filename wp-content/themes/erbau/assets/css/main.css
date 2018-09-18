@@ -81,22 +81,25 @@ a {
 
 .top-nav {
   /*fixed float menu*/
+  top: 0;
   position: fixed;
   z-index: 100;
   width: 100%;
-  background-color: #FBF2BD; }
+  background-color: #FBF2BD;
+  opacity: 0.9;
+  font-size: 13px; }
 
 ul.list-inline a {
   font-family: FuturaPT;
   color: #000000;
   display: inline-block;
   text-transform: uppercase;
-  padding: 20px 5px;
-  margin: 5px;
+  padding: 10px 3px;
+  margin: 5px 0 5px;
   -moz-transition: all 0.3s 0.02s ease;
   -o-transition: all 0.3s 0.02s ease;
   -webkit-transition: all 0.3s 0.02s ease; }
-  ul.list-inline a:hover {
+  ul.list-inline a:hover, ul.list-inline a.active {
     text-decoration: none;
     background-color: #FCDD37;
     color: #000000;
@@ -107,9 +110,8 @@ ul.list-inline {
   text-align: center; }
 
 .calc_menu a {
-  background-color: #82b941;
-  color: #ffffff;
-  border-radius: 10px; }
+  border-radius: 10px;
+  border: 3px dotted #82b941; }
   .calc_menu a:hover {
     color: #000000; }
 
@@ -1248,7 +1250,13 @@ footer {
   text-decoration: none;
   color: #444; }
 
+@media only screen and (max-device-width: 1600px) {
+  .top-nav {
+    font-size: 14px; } }
 @media only screen and (max-device-width: 736px) {
+  .top-nav {
+    font-size: 12px; }
+
   .fancybox-button {
     width: 60px;
     height: 60px; }
@@ -1265,7 +1273,7 @@ footer {
 
   .wrapper {
     width: auto;
-    padding: 0 10px; }
+    padding: 35px 10px 0; }
 
   header .header-top .slogan {
     padding-top: 0; }

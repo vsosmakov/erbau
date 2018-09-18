@@ -17,28 +17,40 @@
     ) );
   ?>
   <?php wp_head(); ?>
+
+  <script>
+    $(document).ready(function() {
+      $("li.menu-item-235 a").addClass('active');
+    });
+  </script>
+
   <script>
   if (screen.width > 736) {
   document.getElementById('vp').setAttribute('content','width=1170');
   }
   </script>
-<script>(function(w,d,s,l,i,cid){w[l]=w[l]||[];w.pclick_client_id=cid;w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-P23G9N', '73670');</script>
+
+  <script>(function(w,d,s,l,i,cid){w[l]=w[l]||[];w.pclick_client_id=cid;w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P23G9N', '73670');</script>
 
   <script>
     $(document).ready(function(){
-      $("#top_nav").on("click","a", function (event) {
+      $("#top-nav").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
-        //забираем идентификатор бока с атрибута href
+        //присваиваем класс "active" текущему пункту меню
+        $("ul li a").removeClass('active');
+        $(this).addClass('active');
+
+        //забираем идентификатор блока с атрибута href        
         var id  = $(this).attr('href'),
         //узнаем высоту от начала страницы до блока на который ссылается якорь
         top = $(id).offset().top;
         //анимируем переход на расстояние - top за 500 мс
-        $('body,html').animate({scrollTop: top}, 500);
+        $('body,html').animate({scrollTop: top}, 1000);
       });
     });
   </script>

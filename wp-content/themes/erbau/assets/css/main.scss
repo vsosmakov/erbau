@@ -231,10 +231,13 @@ a {
   .top-nav {
      /*fixed float menu*/
      // top: 145px; /*height of main menu in px*/
+     top: 0;
      position: fixed;
      z-index: 100;
      width: 100%;
-     background-color: #FBF2BD; 
+     background-color: #FBF2BD;
+     opacity: 0.9;
+     font-size: 13px;
   }
 
   ul.list-inline a {
@@ -242,10 +245,10 @@ a {
         color: #000000;
         display: inline-block;
         text-transform: uppercase;
-        padding: 20px 5px;
-        margin: 5px;
+        padding: 10px 3px;
+        margin: 5px 0 5px;
         @include smooth_tr(0.3s);
-        &:hover {
+        &:hover, &.active {
           text-decoration: none;
           background-color: #FCDD37;
           color: #000000;
@@ -259,11 +262,11 @@ a {
   // li.current-menu-item a {
   //   background-color: #FCDD37
   // }
-
   .calc_menu a {
-      background-color: #82b941;
-      color: #ffffff;
+      // background-color: #82b941;
+      // color: #ffffff;
       border-radius: 10px;
+      border: 3px dotted #82b941;
       &:hover {
         color: #000000;
       }
@@ -1640,7 +1643,15 @@ footer{
 // }
 //}
 //
+@media only screen and (max-device-width: 1600px) {
+  .top-nav {
+     font-size: 14px;
+  }
+}
 @media only screen and (max-device-width: 736px) {
+  .top-nav {
+     font-size: 12px;
+  }
   .fancybox-button{
     width: 60px;
     height: 60px;
@@ -1659,7 +1670,7 @@ footer{
   }
   .wrapper {
     width: auto;
-    padding: 0 10px;
+    padding: 35px 10px 0;
   }
   header{
     .header-top{

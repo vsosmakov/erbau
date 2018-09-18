@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <header>
-  <div class="wrapper">
+  <div id="main" class="wrapper">
     <div class="header-top">
       <div class="logo"></div>
       <div class="slogan">
